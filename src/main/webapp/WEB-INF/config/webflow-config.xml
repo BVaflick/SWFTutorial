@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:webflow="http://www.springframework.org/schema/webflow-config"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/webflow-config
+           http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.4.xsd">
+
+    <webflow:flow-executor id="flowExecutor" flow-registry="flowRegistry"/>
+
+    <!-- The registry of executable flow definitions -->
+    <webflow:flow-registry id="flowRegistry" flow-builder-services="flowBuilder">
+        <webflow:flow-location id="main" path="WEB-INF/flows/main-flow.xml"/>
+    </webflow:flow-registry>
+
+    <webflow:flow-builder-services id="flowBuilder" view-factory-creator="flowViewResolver"/>
+
+    <bean id="flowViewResolver" class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator">
+        <property name="viewResolvers">
+            <list>
+                <ref bean="viewResolver"/>
+            </list>
+        </property>
+    </bean>
+</beans>
