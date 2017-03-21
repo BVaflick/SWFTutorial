@@ -8,17 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Gayterprise Solution</title>
+        <title>Title</title>
     </head>
 
-    <body style="background: #00A2E8">
-        <h1>Are You Gay?</h1>
-        <div>
-            <a href="${flowExecutionUrl}&_eventId=second">I'm the gayest gay!</a>
-        </div>
-        <div>
-            <a href="${flowExecutionUrl}&_eventId=third">Нет! Я не петух!</a>
-        </div>
+    <body>
+        <h1>Ну и лох</h1>
         <footer style="position: absolute; right: 0; bottom: 0;">
             © by Max Degree Laboratory
         </footer>

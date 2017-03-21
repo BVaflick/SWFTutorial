@@ -7,8 +7,13 @@
 
     <view-state id="first" view="first">
         <transition on="second" to="second"/>
+        <transition on="third" to="third"/>
     </view-state>
 
-    <view-state id="second" view="second"/>
+    <view-state id="second" view="second">
+        <transition on="first" to="first"/>
+    </view-state>
+
+    <end-state id="third" view="third"/>
 
 </flow>

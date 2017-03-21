@@ -7,13 +7,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<h1>Congrats!
-    You Came Out!
-</h1>
-
-</body>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>Congrats!
+            You Came Out!
+        </h1>
+        <a href="${flowExecutionUrl}&_eventId=first">Do coming out again</a>
+        <footer style="position: absolute; right: 0; bottom: 0;">
+            © by Max Degree Laboratory
+        </footer>
+    </body>
 </html>
