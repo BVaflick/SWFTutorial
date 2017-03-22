@@ -8,6 +8,7 @@
     <view-state id="first" view="first">
         <transition on="second" to="second"/>
         <transition on="third" to="third"/>
+        <transition on="button" to="third"/>
     </view-state>
 
     <view-state id="second" view="second">

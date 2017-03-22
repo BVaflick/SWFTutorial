@@ -1,0 +1,40 @@
+body {
+    background: rgba(46, 176, 220, 0.4);
+    position: relative;
+}
+.text{
+    display: block;
+    height: 20px;
+    width: 30%;
+    position:absolute;
+    top: 240px;
+    left: 35%;
+    color: white;
+    text-align: center;
+}
+a {
+    display: block;
+    height: 20px;
+    width: 30%;
+    background-color: #008687;
+    border: 2px solid #004b4c;
+    border-radius: 50px;
+    position:absolute;
+    padding: 20px;
+    left: 35%;
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#ffffff;
+}
+.link1 {
+    top: 320px;
+}
+.link2 {
+    top: 400px;
+}
+a:hover {
+    background-color: rgba(46, 176, 220, 0.4);
+    border: 2px solid #008687;
+}
